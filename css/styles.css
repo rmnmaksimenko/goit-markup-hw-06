@@ -899,6 +899,7 @@ img {
   font-size: 12px;
   line-height: 1.166;
   letter-spacing: 0.01em;
+  margin-bottom: 4px;
 }
 
 .entry-field {
@@ -912,29 +913,18 @@ img {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .social-icon {
-  width: 20px;
-  height: 20px;
-}
-
-.social-link:hover,
-.social-link:focus {
-  fill: var(--color-fifth);
-  background-color: var(--color-fourth);
-} */
-
 .entry-field-icon-container {
   width: 18px;
   height: 18px;
   position: absolute;
   left: 15px;
-  top: 24px;
+  bottom: 12px;
 }
 
 .entry-field-icon {
-  width: 20px;
-  height: 20px;
-  /* position: absolute; */
+  width: 18px;
+  height: 18px;
+  fill: var(--color-title);
 }
 
 .textarea {
@@ -959,6 +949,14 @@ img {
 .textarea:focus {
   border: 1px solid var(--color-fourth);
   outline: 0px;
+}
+
+.form-field .entry-field-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field:hover .entry-field-icon {
+  fill: var(--color-fourth);
 }
 
 .i-agree {
