@@ -13,8 +13,8 @@ report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 #неоптимизированые изображения
 images.old
 
-#тестовыяе файлы
-contacts-test.html
+#тестовые файлы
+# contacts-test.html
 
 # Runtime data
 pids

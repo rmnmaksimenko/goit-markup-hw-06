@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Добавление шрифтов Raleway 700 и Roboto 400 / 500 / 700 / 900 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Подключение modern-normalize  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <button data-modal-open type="button">Привет!</button>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <h2 class="modal-heading">Оставьте свои данные, мы вам перезвоним</h2>
+        <form action="" class="form-container">
+          <ul class="form-field-list">
+            <li class="form-field">
+              <label for="name" class="label-text">Имя</label>
+              <input class="entry-field" type="text" name="name" id="name" />
+              <div class="entry-field-icon-container">
+                <svg class="entry-field-icon">
+                  <use href="./icons-form/icons.svg#person"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="form-field">
+              <label for="tel" class="label-text">Телефон</label>
+              <input class="entry-field" type="tel" name="tel" id="tel" />
+              <div class="entry-field-icon-container">
+                <svg class="entry-field-icon">
+                  <use href="./icons-form/icons.svg#phone"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="form-field">
+              <label for="mail" class="label-text">Почта</label>
+              <input class="entry-field" type="email" name="mail" id="mail" />
+              <div class="entry-field-icon-container">
+                <svg class="entry-field-icon">
+                  <use href="./icons-form/icons.svg#email"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="form-field">
+              <label for="comment" class="label-text">Комментарий</label>
+              <textarea
+                class="textarea"
+                name="comment"
+                id="comment"
+                rows="6"
+                placeholder="Введите текст"
+              ></textarea>
+            </li>
+          </ul>
+          <div class="i-agree">
+            <input class="i-agree-checkbox" type="checkbox" name="i-agree" id="i-agree" />
+            <label for="i-agree" class="i-agree-text"
+              >Соглашаюсь заказывать пиццу с анчоусами</label
+            >
+          </div>
+          <button type="submit" class="form-submit">Отправить</button>
+        </form>
+        <button data-modal-close type="button" class="modal-close-button">
+          <svg class="modal-close-icon">
+            <use href="./images/close.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
