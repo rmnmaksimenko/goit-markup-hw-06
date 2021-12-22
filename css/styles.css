@@ -919,12 +919,14 @@ img {
   position: absolute;
   left: 15px;
   bottom: 12px;
+  fill: var(--color-title);
 }
 
 .entry-field-icon {
   width: 18px;
   height: 18px;
-  fill: var(--color-title);
+  /* fill: var(--color-title); */
+  fill: inherit;
 }
 
 .textarea {
@@ -943,9 +945,15 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.entry-field:hover,
+/* .entry-field:hover,
 .entry-field:focus,
 .textarea:hover,
+.textarea:focus {
+  border: 1px solid var(--color-fourth);
+  outline: 0px;
+} */
+
+.entry-field:focus,
 .textarea:focus {
   border: 1px solid var(--color-fourth);
   outline: 0px;
@@ -955,7 +963,12 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-field:hover .entry-field-icon {
+/* .form-field:hover .entry-field-icon,
+.form-field:focus .entry-field-icon {
+  fill: var(--color-fourth);
+} */
+
+.entry-field:focus ~ .entry-field-icon-container {
   fill: var(--color-fourth);
 }
 
