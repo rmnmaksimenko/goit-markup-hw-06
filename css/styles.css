@@ -877,14 +877,7 @@ img {
 /* отступы формы */
 
 .form-container {
-  /* outline: 1px solid tomato; */
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.form-field-list {
-  margin-bottom: 20px;
+  margin-top: 12px;
 }
 
 /* расположение элементов в форме */
@@ -893,10 +886,11 @@ img {
   position: relative;
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
 }
 
-.form-field:not(:last-child) {
-  margin-bottom: 10px;
+.textarea-margin {
+  margin-bottom: 20px;
 }
 
 /* стиль текста метки */
@@ -911,25 +905,28 @@ img {
 /* стиль окон ввода */
 
 .entry-field {
-  border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
-  border-radius: 4px;
+  height: 40px;
+  padding-left: 42px;
+  padding-right: 12px;
   font-size: 14px;
   line-height: 1.142;
   letter-spacing: 0.01em;
-  padding: 12px 12px 12px 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .textarea {
-  resize: none;
-  border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
-  border-radius: 4px;
+  resize: none;
+  height: 120px;
+  padding: 12px;
   font-size: 14px;
   line-height: 1.142;
   letter-spacing: 0.01em;
-  padding: 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -944,7 +941,7 @@ img {
   height: 18px;
   position: absolute;
   left: 15px;
-  bottom: 12px;
+  bottom: 11px;
   fill: var(--color-title);
 }
 
@@ -972,25 +969,52 @@ img {
   fill: var(--color-fourth);
 }
 
-/* стиль чекбокса внизу формы */
+/* - - - стиль чекбокса - - - */
+
+/* стиль строки с чекбоксом */
 
 .i-agree {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
-}
-
-.i-agree-checkbox {
-  margin-right: 7px;
-}
-
-.i-agree-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
 }
+
+/* скрытый стандартный чекбокс */
+
+.i-agree-checkbox {
+  appearance: none;
+  position: absolute;
+}
+
+/* кастомный чекбокс в нечекнутом состоянии */
+
+.i-agree-icon-container {
+  display: flex;
+  width: 16px;
+  height: 15px;
+  background-image: url(../icons-form/icon-uncheck.svg);
+  background-position: center;
+  background-size: contain;
+  margin-right: 7px;
+}
+
+/* чекнутый чекбокс */
+
+.i-agree-checkbox:checked + .i-agree-icon-container {
+  border-radius: 2px;
+  background-image: url(../icons-form/icon-check.svg);
+  background-position: center;
+  background-size: contain;
+  background-origin: border-box;
+  background-color: var(--color-fourth);
+}
+
+/* оформление ссылки договора */
 
 .i-agree-link {
   text-decoration: underline;
