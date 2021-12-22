@@ -629,6 +629,73 @@ img {
   background-color: var(--color-fourth);
 }
 
+.footer-news {
+  margin-left: 93px;
+}
+
+.footer-form {
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer-mail {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: var(--color-background-second);
+  color: var(--color-fifth);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-right: 12px;
+}
+
+.footer-mail::placeholder {
+  background-color: inherit;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-mail:focus {
+  border: 1px solid var(--color-fourth);
+  outline: 0px;
+}
+
+.footer-submit {
+  display: flex;
+  padding: 10px 28px 10px 29px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border-style: none;
+  color: var(--color-fifth);
+  background-color: var(--color-fourth);
+  border-radius: 4px;
+}
+
+.footer-submit-text {
+  display: flex;
+  margin-right: 10px;
+}
+
+/* .footer-submit-icon-container {
+  display: flex;
+  align-self: center;
+  width: 24px;
+  height: 24px;
+} */
+
+.footer-submit-icon {
+  display: flex;
+  align-self: center;
+  width: 24px;
+  height: 24px;
+  fill: var(--color-fifth);
+}
+
 /* - - - - - - - - - - - - - - - - - - - */
 /* - - - - - - - ПОРТФОЛИО - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - */

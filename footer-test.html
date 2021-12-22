@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Добавление шрифтов Raleway 700 и Roboto 400 / 500 / 700 / 900 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Подключение modern-normalize  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <footer class="footer">
+      <div class="container footer-flex">
+        <div class="footer-left-part">
+          <!-- раздел контакты -->
+
+          <!-- лого -->
+          <a href="./index.html" class="logo-link logo-footer link-backlight"
+            >Web<span class="logo-link-light">Studio</span></a
+          >
+          <!-- контакты -->
+          <address class="address">
+            <ul class="contacts-list">
+              <!-- физический адрес -->
+              <li class="contacts-block">
+                <a
+                  href="https://goo.gl/maps/tme8VJcGeJXMZeD66"
+                  class="map-address-link link-backlight"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+
+              <!-- эл. почта -->
+              <li class="contacts-block">
+                <a href="mailto:info@example.com" class="mail-contacts-link link-backlight"
+                  >info@example.com</a
+                >
+              </li>
+
+              <!-- моб. телефон -->
+              <li class="contacts-block">
+                <a href="tel:+380991111111" class="phone-contacts-link link-backlight"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <!-- соцсети в футере -->
+        <div class="footer-right-part">
+          <!-- заголовок -->
+          <h3 class="footer-heading">Присоединяйтесь</h3>
+
+          <!-- список соцсетей -->
+          <ul class="footer-social-list">
+            <li class="footer-social-block">
+              <a href="http://www.instagram.com/" class="footer-social-link">
+                <svg class="social-icon">
+                  <use href="./images/symbol-defs.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer-social-block">
+              <a href="http://www.twitter.com/" class="footer-social-link">
+                <svg class="social-icon">
+                  <use href="./images/symbol-defs.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer-social-block">
+              <a href="http://www.facebook.com/" class="footer-social-link">
+                <svg class="social-icon">
+                  <use href="./images/symbol-defs.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer-social-block">
+              <a href="http://www.linkedin.com/" class="footer-social-link">
+                <svg class="social-icon">
+                  <use href="./images/symbol-defs.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- форма с рассылкой -->
+        <div class="footer-news">
+          <form class="footer-form">
+            <label>
+              <h3 class="footer-heading">Подпишитесь на рассылку</h3>
+              <input class="footer-mail" type="email" placeholder="E-mail" />
+            </label>
+            <button type="submit" class="footer-submit">
+              <span class="footer-submit-text">Подписаться</span>
+              <svg class="footer-submit-icon">
+                <use href="./icons-form/icon-send.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

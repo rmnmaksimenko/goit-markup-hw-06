@@ -312,6 +312,7 @@
           <!-- контакты -->
           <address class="address">
             <ul class="contacts-list">
+              <!-- физический адрес -->
               <li class="contacts-block">
                 <a
                   href="https://goo.gl/maps/tme8VJcGeJXMZeD66"
@@ -319,11 +320,15 @@
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
+
+              <!-- эл. почта -->
               <li class="contacts-block">
                 <a href="mailto:info@example.com" class="mail-contacts-link link-backlight"
                   >info@example.com</a
                 >
               </li>
+
+              <!-- моб. телефон -->
               <li class="contacts-block">
                 <a href="tel:+380991111111" class="phone-contacts-link link-backlight"
                   >+38 099 111 11 11</a
@@ -334,7 +339,10 @@
         </div>
         <!-- соцсети в футере -->
         <div class="footer-right-part">
+          <!-- заголовок -->
           <h3 class="footer-heading">Присоединяйтесь</h3>
+
+          <!-- список соцсетей -->
           <ul class="footer-social-list">
             <li class="footer-social-block">
               <a href="http://www.instagram.com/" class="footer-social-link">
@@ -343,6 +351,7 @@
                 </svg>
               </a>
             </li>
+
             <li class="footer-social-block">
               <a href="http://www.twitter.com/" class="footer-social-link">
                 <svg class="social-icon">
@@ -350,6 +359,7 @@
                 </svg>
               </a>
             </li>
+
             <li class="footer-social-block">
               <a href="http://www.facebook.com/" class="footer-social-link">
                 <svg class="social-icon">
@@ -357,6 +367,7 @@
                 </svg>
               </a>
             </li>
+
             <li class="footer-social-block">
               <a href="http://www.linkedin.com/" class="footer-social-link">
                 <svg class="social-icon">
@@ -365,6 +376,22 @@
               </a>
             </li>
           </ul>
+        </div>
+
+        <!-- форма с рассылкой -->
+        <div class="footer-news">
+          <form class="footer-form">
+            <label>
+              <h3 class="footer-heading">Подпишитесь на рассылку</h3>
+              <input class="footer-mail" type="email" placeholder="E-mail" />
+            </label>
+            <button type="submit" class="footer-submit">
+              <span class="footer-submit-text">Подписаться</span>
+              <svg class="footer-submit-icon">
+                <use href="./icons-form/icon-send.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
