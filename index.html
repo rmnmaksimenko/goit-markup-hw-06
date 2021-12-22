@@ -461,6 +461,67 @@
     <!-- скрипт на модалку -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <!-- заголовок модального окна -->
+        <h2 class="modal-heading">Оставьте свои данные, мы вам перезвоним</h2>
+
+        <!-- форма связи с клиентом -->
+        <form action="" class="form-container" autocomplete="off">
+          <!-- поле ввода имени -->
+          <label class="form-field">
+            <span class="label-text">Имя</span>
+            <input class="entry-field" type="text" name="name" />
+            <div class="entry-field-icon-container">
+              <svg class="entry-field-icon">
+                <use href="./icons-form/icons.svg#person"></use>
+              </svg>
+            </div>
+          </label>
+
+          <!-- поле ввода телефона -->
+          <label class="form-field">
+            <span class="label-text">Телефон</span>
+            <input class="entry-field" type="tel" name="tel" />
+            <div class="entry-field-icon-container">
+              <svg class="entry-field-icon">
+                <use href="./icons-form/icons.svg#phone"></use>
+              </svg>
+            </div>
+          </label>
+
+          <!-- поле ввода почты -->
+          <label class="form-field">
+            <span class="label-text">Почта</span>
+            <input class="entry-field" type="email" name="mail" />
+            <div class="entry-field-icon-container">
+              <svg class="entry-field-icon">
+                <use href="./icons-form/icons.svg#email"></use>
+              </svg>
+            </div>
+          </label>
+
+          <!-- поле комментария -->
+          <label class="form-field textarea-margin">
+            <span class="label-text">Комментарий</span>
+            <textarea
+              class="textarea"
+              name="comment"
+              rows="6"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+          <!-- чекбокс согласия с условиями -->
+          <label class="i-agree">
+            <input class="i-agree-checkbox" type="checkbox" name="i-agree" />
+            <span class="i-agree-icon-container"></span>
+            Соглашаюсь заказывать&nbsp
+            <a href="https://i.imgur.com/vLyztrC.png" target="_blank" class="i-agree-link">Пиццу с анчоусами</a>
+          </label>
+
+          <!-- кнопка "отправить" -->
+          <button type="submit" class="form-submit">Отправить</button>
+        </form>
+
+        <!-- кнопка закрытия формы -->
         <button data-modal-close type="button" class="modal-close-button">
           <svg class="modal-close-icon">
             <use href="./images/close.svg#close"></use>
