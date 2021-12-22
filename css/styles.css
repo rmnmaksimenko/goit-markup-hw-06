@@ -657,6 +657,7 @@ img {
 
 .footer-mail:focus {
   border: 1px solid var(--color-fourth);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   outline: 0px;
 }
 
