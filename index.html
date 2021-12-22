@@ -468,7 +468,7 @@
           <form class="footer-form">
             <label>
               <h3 class="footer-heading">Подпишитесь на рассылку</h3>
-              <input class="footer-mail" type="email" placeholder="E-mail" />
+              <input class="footer-mail" type="email" placeholder="E-mail" required />
             </label>
             <button type="submit" class="footer-submit">
               <span class="footer-submit-text">Подписаться</span>
@@ -485,14 +485,14 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <!-- заголовок модального окна -->
-        <h2 class="modal-heading">Оставьте свои данные, мы вам перезвоним</h2>
+        <b class="modal-heading">Оставьте свои данные, мы вам перезвоним</b>
 
         <!-- форма связи с клиентом -->
         <form action="" class="form-container" autocomplete="off">
           <!-- поле ввода имени -->
           <label class="form-field">
             <span class="label-text">Имя</span>
-            <input class="entry-field" type="text" name="name" />
+            <input class="entry-field" type="text" name="name" required />
             <div class="entry-field-icon-container">
               <svg class="entry-field-icon">
                 <use href="./icons-form/icons.svg#person"></use>
@@ -503,7 +503,7 @@
           <!-- поле ввода телефона -->
           <label class="form-field">
             <span class="label-text">Телефон</span>
-            <input class="entry-field" type="tel" name="tel" />
+            <input class="entry-field" type="tel" name="tel" required />
             <div class="entry-field-icon-container">
               <svg class="entry-field-icon">
                 <use href="./icons-form/icons.svg#phone"></use>
@@ -514,7 +514,7 @@
           <!-- поле ввода почты -->
           <label class="form-field">
             <span class="label-text">Почта</span>
-            <input class="entry-field" type="email" name="mail" />
+            <input class="entry-field" type="email" name="mail" required />
             <div class="entry-field-icon-container">
               <svg class="entry-field-icon">
                 <use href="./icons-form/icons.svg#email"></use>
