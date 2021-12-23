@@ -1092,11 +1092,11 @@ img {
 }
 
 .i-agree-checkbox:not(:checked):focus + .i-agree-icon-container {
-  outline: 1px solid var(--color-main);
+  outline: 2px solid var(--color-fourth);
 }
 
 .i-agree-checkbox:checked:focus + .i-agree-icon-container {
-  outline: 1px solid var(--color-main);
+  outline: 2px solid var(--color-main);
 }
 
 /* оформление ссылки договора */
