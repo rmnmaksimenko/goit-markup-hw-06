@@ -1097,15 +1097,11 @@ img {
 }
 
 .i-agree-checkbox:not(:checked):focus + .i-agree-icon-container {
-  box-shadow: 
-  0 0 0 2px var(--color-title),
-  0 0 0 4px var(--color-fourth);
+  box-shadow: 0 0 0 2px var(--color-title), 0 0 0 4px var(--color-fourth);
 }
 
 .i-agree-checkbox:checked:focus + .i-agree-icon-container {
-  box-shadow: 
-  0 0 0 2px var(--color-fourth),
-  0 0 0 4px var(--color-title);
+  box-shadow: 0 0 0 2px var(--color-fourth), 0 0 0 4px var(--color-title);
 }
 
 /* оформление ссылки договора */
