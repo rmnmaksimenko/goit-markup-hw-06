@@ -1044,8 +1044,10 @@ img {
 
 .i-agree {
   display: flex;
+  width: fit-content;
   align-items: center;
-  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
   font-size: 14px;
   line-height: 1.71;
